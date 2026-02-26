@@ -1,24 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Verification Certificate</title>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificate Verified</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f2f2f2;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        padding: 60px;
+        box-sizing: border-box;
+    }
+
+    .left-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .badge {
+        width: 80px;
+        height: 80px;
+        background-color: #1da1f2;
+        clip-path: polygon(
+            50% 0%, 61% 8%, 75% 5%, 82% 18%, 95% 25%, 
+            92% 39%, 100% 50%, 92% 61%, 95% 75%, 
+            82% 82%, 75% 95%, 61% 92%, 50% 100%, 
+            39% 92%, 25% 95%, 18% 82%, 5% 75%, 
+            8% 61%, 0% 50%, 8% 39%, 5% 25%, 
+            18% 18%, 25% 5%, 39% 8%
+        );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .badge::after {
+        content: "✓";
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .verified-text {
+        margin-top: 15px;
+        font-size: 20px;
+        color: #1da1f2;
+    }
+
+    .right-section {
+        max-width: 400px;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.8;
+    }
+
+    .right-section p {
+        margin: 5px 0;
+    }
+
+    .label {
+        font-weight: bold;
+    }
+</style>
+
 </head>
-<body style="font-family: Arial, sans-serif; text-align: center; margin-top: 100px;">
+<body>
 
-    <h2>Verification Certified ✅</h2>
-    
-    <br>
+<div class="container">
 
-    Name : Anand Kailas Chopade
-    
-    <br><br>
+    <div class="left-section">
+        <div class="badge"></div>
+        <div class="verified-text">Certificate Verified</div>
+    </div>
 
-    Trainer ID : ebfurtecx
-    
-    <br><br>
+    <div class="right-section">
+        <p><span class="label">CandidateName :</span> SUMAIRA MASOOD</p>
+        <p><span class="label">CandidateID :</span> TR144472</p>
+        <p><span class="label">SectorName :</span> Media & Entertainment</p>
+        <p><span class="label">QPCode :</span> MES/Q0702</p>
+        <p><span class="label">QPVersion :</span> 3.0</p>
+        <p><span class="label">JobRole Name :</span> Social Media Executive</p>
+        <p><span class="label">Grade :</span> B</p>
+        <p><span class="label">Document ID :</span> roltp28duc2iub7g</p>
+        <p><span class="label">IssuanceDate :</span> 05-Apr-2023</p>
+        <p><span class="label">Valid Upto :</span> 24-Mar-2025</p>
+        <p><span class="label">Type :</span> certificate</p>
+    </div>
 
-    Aadhar No : XXXXXXXX2444
+</div>
 
 </body>
 </html>
