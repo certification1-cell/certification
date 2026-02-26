@@ -3,50 +3,42 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Certificate Verified</title>
+<title>Certificate Verification</title>
 
 <style>
     body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
-        background-color: #f2f2f2;
+        background-color: #ffffff; /* Pure white background */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
     }
 
     .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100vh;
-        padding: 60px;
-        box-sizing: border-box;
-    }
-
-    .left-section {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
+        padding: 40px 20px;
+        width: 100%;
+        max-width: 600px;
     }
 
     .verified-img {
-        width: 100px;
+        width: 120px;
         height: auto;
+        display: block;
+        margin: 0 auto 30px auto; /* Perfect spacing below image */
     }
 
-    .verified-text {
-        margin-top: 15px;
-        font-size: 22px;
-        color: #3b82f6;
-    }
-
-    .right-section {
-        max-width: 400px;
+    .details {
+        text-align: left;
         font-size: 16px;
         color: #333;
         line-height: 1.8;
     }
 
-    .right-section p {
-        margin: 5px 0;
+    .details p {
+        margin: 6px 0;
     }
 
     .label {
@@ -59,24 +51,22 @@
 
 <div class="container">
 
-    <div class="left-section">
-        <!-- Blue Tick Image -->
-        <img src="blue-tick.png" alt="Verified Badge" class="verified-img">
-        <div class="verified-text">Certificate Verified</div>
-    </div>
+    <!-- Verified Image Centered at Top -->
+    <img src="blue-tick.png" alt="Verified Badge" class="verified-img">
 
-    <div class="right-section">
-        <p><span class="label">CandidateName :</span> SUMAIRA MASOOD</p>
-        <p><span class="label">CandidateID :</span> TR144472</p>
-        <p><span class="label">SectorName :</span> Media & Entertainment</p>
-        <p><span class="label">QPCode :</span> MES/Q0702</p>
-        <p><span class="label">QPVersion :</span> 3.0</p>
-        <p><span class="label">JobRole Name :</span> Social Media Executive</p>
-        <p><span class="label">Grade :</span> B</p>
-        <p><span class="label">Document ID :</span> roltp28duc2iub7g</p>
-        <p><span class="label">IssuanceDate :</span> 05-Apr-2023</p>
-        <p><span class="label">Valid Upto :</span> 24-Mar-2025</p>
-        <p><span class="label">Type :</span> certificate</p>
+    <!-- Certificate Details Below Image -->
+    <div class="details">
+        <p><span class="label">Candidate Name:</span> SUMAIRA MASOOD</p>
+        <p><span class="label">Candidate ID:</span> TR144472</p>
+        <p><span class="label">Sector Name:</span> Media & Entertainment</p>
+        <p><span class="label">QP Code:</span> MES/Q0702</p>
+        <p><span class="label">QP Version:</span> 3.0</p>
+        <p><span class="label">Job Role Name:</span> Social Media Executive</p>
+        <p><span class="label">Grade:</span> B</p>
+        <p><span class="label">Document ID:</span> roltp28duc2iub7g</p>
+        <p><span class="label">Issuance Date:</span> 05-Apr-2023</p>
+        <p><span class="label">Valid Upto:</span> 24-Mar-2025</p>
+        <p><span class="label">Type:</span> Certificate</p>
     </div>
 
 </div>
