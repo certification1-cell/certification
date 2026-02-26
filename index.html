@@ -27,34 +27,15 @@
         align-items: flex-start;
     }
 
-    .badge {
-        width: 80px;
-        height: 80px;
-        background-color: #1da1f2;
-        clip-path: polygon(
-            50% 0%, 61% 8%, 75% 5%, 82% 18%, 95% 25%, 
-            92% 39%, 100% 50%, 92% 61%, 95% 75%, 
-            82% 82%, 75% 95%, 61% 92%, 50% 100%, 
-            39% 92%, 25% 95%, 18% 82%, 5% 75%, 
-            8% 61%, 0% 50%, 8% 39%, 5% 25%, 
-            18% 18%, 25% 5%, 39% 8%
-        );
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .badge::after {
-        content: "✓";
-        color: white;
-        font-size: 40px;
-        font-weight: bold;
+    .verified-img {
+        width: 100px;
+        height: auto;
     }
 
     .verified-text {
         margin-top: 15px;
-        font-size: 20px;
-        color: #1da1f2;
+        font-size: 22px;
+        color: #3b82f6;
     }
 
     .right-section {
@@ -79,7 +60,8 @@
 <div class="container">
 
     <div class="left-section">
-        <div class="badge"></div>
+        <!-- Blue Tick Image -->
+        <img src="blue-tick.png" alt="Verified Badge" class="verified-img">
         <div class="verified-text">Certificate Verified</div>
     </div>
 
